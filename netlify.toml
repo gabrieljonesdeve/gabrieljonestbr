@@ -1,6 +1,3 @@
 [build]
   publish = "."  # Indica che i file si trovano nella root del progetto
   command = ""   # Lascia vuoto se non hai bisogno di un comando di build
-
-[dev]
-  command = "npm start"  # Solo se hai un server locale da avviare

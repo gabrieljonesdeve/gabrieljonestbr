@@ -1,11 +1,6 @@
 [build]
-  publish = "dist"  # Modifica con il percorso della tua cartella di output
-  command = "npm run build"  # Cambia con il comando di build corretto, se necessario
+  publish = "dist"  # Cambia con il percorso corretto
+  command = "npm run build"  # Assicurati che questo comando funzioni correttamente
 
 [dev]
   command = "npm start"  # Comando per avviare il server in locale, se applicabile
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200

@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Logo" />
+        <h1>Feed</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Messaggi</a>
+            <a href="#">Notifiche</a>
+        </nav>
+    </header>
+    
+    <div class="feed">
+        <div class="post">
+            <h3>Post 1</h3>
+            <p>Contenuto del primo post.</p>
+        </div>
+        <div class="post">
+            <h3>Post 2</h3>
+            <p>Contenuto del secondo post.</p>
+        </div>
+        <div class="post">
+            <h3>Post 3</h3>
+            <p>Contenuto del terzo post.</p>
+        </div>
+    </div>
 
+    <div class="login-link">
+        <p><a href="#admin" onclick="showLogin()">Accedi come Admin</a></p>
+    </div>
+
+    <div id="admin" style="display: none;">
+        <div class="login-container">
+            <h2>Login</h2>
+            <form id="login-form">
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+            <p>Non hai un account? <a href="#" id="signup-link" class="signup-link">Registrati</a></p>
+        </div>
+    </div>
+
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

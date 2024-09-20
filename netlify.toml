@@ -1,6 +1,6 @@
 [build]
-  publish = "/"  # Cambia con il percorso corretto
-  command = "npm run build"  # Assicurati che questo comando funzioni correttamente
+  publish = "."  # Indica che i file si trovano nella root del progetto
+  command = ""   # Lascia vuoto se non hai bisogno di un comando di build
 
 [dev]
-  command = "npm start"  # Comando per avviare il server in locale, se applicabile
+  command = "npm start"  # Solo se hai un server locale da avviare

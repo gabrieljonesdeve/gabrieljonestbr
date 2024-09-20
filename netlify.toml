@@ -1,5 +1,5 @@
 [build]
-  publish = "dist"  # Cambia con il percorso corretto
+  publish = "/"  # Cambia con il percorso corretto
   command = "npm run build"  # Assicurati che questo comando funzioni correttamente
 
 [dev]
